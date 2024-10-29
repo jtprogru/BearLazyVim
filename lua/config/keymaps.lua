@@ -8,5 +8,5 @@ map("n", "<tab>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 map("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
 
 -- commenting
-map("n", "<leader>/", "<cmd>normal gcc<cr>", { desc = "Comment current line" })
+-- map("n", "<leader>/", "<cmd>normal gcc<cr>", { desc = "Comment current line" })
 map("n", "<leader>x", LazyVim.ui.bufremove, { desc = "Delete Buffer" })
