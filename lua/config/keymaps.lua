@@ -4,8 +4,8 @@
 local map = vim.keymap.set
 
 -- Remap for dealing with buffers
-map("n", "<tab>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
-map("n", "<S-tab>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
+map("n", "<tab>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
+map("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
 
 -- commenting
 map("n", "<leader>/", "<cmd>normal gcc<cr>", { desc = "Comment current line" })
