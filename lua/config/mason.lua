@@ -11,6 +11,7 @@ return {
     "isort",
     "pylint",
     "pyright",
+    "ruff",
     -- Lua
     "stylua",
     "luacheck",
