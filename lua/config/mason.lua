@@ -33,5 +33,7 @@ return {
     -- Jsonnet
     "jsonnet-language-server",
     "jsonnetfmt",
+    -- Rust
+    -- "nil"
   },
 }
