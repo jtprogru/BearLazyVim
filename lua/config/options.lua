@@ -7,12 +7,13 @@ vim.g.python3_host_prog = HOME .. "/.config/nvim/venv/bin/python3"
 
 vim.g.lazyvim_python_lsp = "ruff"
 
+vim.opt.colorcolumn = "120"
 
 opt.relativenumber = false -- Relative line numbers
 
 vim.g.bigfile_size = 1024 * 1024 * 1024 * 1.5 -- 1.5 GB
 
-vim.filetype.add {
+vim.filetype.add({
   extension = {
     gotmpl = "gotmpl",
   },
@@ -22,4 +23,4 @@ vim.filetype.add {
     [".*/templates/.*%.ya?ml"] = "helm",
     ["helmfile.*%.ya?ml"] = "helm",
   },
-}
+})
