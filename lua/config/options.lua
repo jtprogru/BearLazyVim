@@ -5,11 +5,14 @@ local opt = vim.opt
 local HOME = os.getenv("HOME")
 vim.g.python3_host_prog = HOME .. "/.config/nvim/venv/bin/python3"
 
+-- Use Ruff for Python
 vim.g.lazyvim_python_lsp = "ruff"
 
+-- Set colorcolumn to 120
 vim.opt.colorcolumn = "120"
 
-opt.relativenumber = false -- Relative line numbers
+-- Relative line numbers
+opt.relativenumber = false
 
 vim.g.bigfile_size = 1024 * 1024 * 1024 * 1.5 -- 1.5 GB
 
