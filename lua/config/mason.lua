@@ -33,7 +33,8 @@ return {
     -- Jsonnet
     "jsonnet-language-server",
     "jsonnetfmt",
-    -- Rust
-    -- "nil"
+    -- Markdown
+    "markdownlint-cli2",
+    "markdown-toc",
   },
 }
