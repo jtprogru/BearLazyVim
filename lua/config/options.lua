@@ -8,8 +8,12 @@ vim.g.python3_host_prog = HOME .. "/.config/nvim/venv/bin/python3"
 -- Use Ruff for Python
 vim.g.lazyvim_python_lsp = "ruff"
 
--- Set colorcolumn to 120
-vim.opt.colorcolumn = "120"
+-- Set color column to 120
+opt.colorcolumn = "120"
+
+-- Enable spell checking
+opt.spell = true
+opt.spelllang = "ru_ru,en_us"
 
 -- Relative line numbers
 opt.relativenumber = false
