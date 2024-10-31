@@ -1,16 +1,20 @@
 return {
   "oflisback/obsidian-bridge.nvim",
-  dependencies = { "nvim-telescope/telescope.nvim" },
+  dependencies = {
+    "nvim-telescope/telescope.nvim",
+    "nvim-lua/plenary.nvim",
+  },
   config = function()
     require("obsidian-bridge").setup({
-      obsidian_server_address = "https://localhost:27124",
+      obsidian_server_address = "http://localhost:27123",
+      scroll_sync = true,
     })
   end,
   event = {
     "BufReadPre *.md",
     "BufNewFile *.md",
   },
-  lazy = true,
+  lazy = false,
 }
 
 -- return {
