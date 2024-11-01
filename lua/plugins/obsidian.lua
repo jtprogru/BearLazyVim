@@ -28,22 +28,22 @@ return {
     "nvim-treesitter/nvim-treesitter",
   },
   opts = {
-    wiki_link_func = function(opts)
-      return require("obsidian.util").use_alias_only(opts)
-    end,
+    -- wiki_link_func = function(opts)
+    --   return require("obsidian.util").use_alias_only(opts)
+    -- end,
     -- Either 'wiki' or 'markdown'.
     preferred_link_style = "wiki",
-    -- Optional, customize how note IDs are generated given an optional title.
-    ---@param title string|?
-    ---@return string
-    note_id_func = function(title)
-      if title ~= nil then
-        -- If title is given, transform it into valid file name.
-        return custom_uuid4()
-      else
-        return title
-      end
-    end,
+    -- -- Optional, customize how note IDs are generated given an optional title.
+    -- ---@param title string|?
+    -- ---@return string
+    -- note_id_func = function(title)
+    --   if title ~= nil then
+    --     -- If title is given, transform it into valid file name.
+    --     return custom_uuid4()
+    --   else
+    --     return title
+    --   end
+    -- end,
     workspaces = {
       {
         name = "personal",
@@ -87,7 +87,7 @@ return {
     templates = {
       folder = "Templates",
       date_format = "%Y-%m-%d",
-      time_format = "%HH:%MM:%ss",
+      time_format = "%HH-%MM-%ss",
     },
     attachments = {
       img_folder = "Static",
