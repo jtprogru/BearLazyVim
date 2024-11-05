@@ -1,3 +1,6 @@
+-- Alternative plugins:
+-- https://github.com/FabijanZulj/blame.nvim
+
 return {
   "lewis6991/gitsigns.nvim",
   ft = { "gitcommit", "diff" },
