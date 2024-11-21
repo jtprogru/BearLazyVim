@@ -47,6 +47,7 @@ return {
         "cpp",
         "diff",
         "dockerfile",
+        "elixir",
         "go",
         "gomod",
         "gosum",

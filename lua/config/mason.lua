@@ -18,6 +18,8 @@ return {
     -- C/C++
     "clangd",
     "clang-format",
+    -- Elixir
+    "elixir-ls",
     -- Docker
     "docker-compose-language-service",
     "dockerfile-language-server",
