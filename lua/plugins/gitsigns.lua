@@ -24,6 +24,14 @@ return {
   end,
   opts = {
     current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
+    current_line_blame_opts = {
+      virt_text = true,
+      virt_text_pos = "eol", -- 'eol' | 'overlay' | 'right_align'
+      delay = 1000,
+      ignore_whitespace = false,
+      virt_text_priority = 100,
+      use_focus = true,
+    },
     current_line_blame_formatter = "<author> (<author_time:%Y-%m-%d>) - <summary>",
     signs = {
       add = { text = "" },
@@ -33,13 +41,9 @@ return {
       changedelete = { text = "~" },
       untracked = { text = "󰘓" },
     },
-    -- on_attach = function(bufnr)
-    --   utils.load_mappings("gitsigns", { buffer = bufnr })
-    -- end,
+    numhl = true,
   },
   config = function(_, opts)
-    -- TODO: Понятия не имею нахрена это было тут, но оставлю для истории.
-    -- dofile(vim.g.base46_cache .. "git")
     require("gitsigns").setup(opts)
   end,
 }
