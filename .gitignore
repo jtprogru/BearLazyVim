@@ -9,3 +9,4 @@ data
 venv/
 lazy-lock.json
 
+lazyvim.json
