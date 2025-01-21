@@ -38,5 +38,7 @@ return {
     -- Markdown
     "markdownlint-cli2",
     "markdown-toc",
+    -- Rust
+    "rust-analyzer",
   },
 }
