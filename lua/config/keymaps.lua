@@ -6,9 +6,6 @@ local map = vim.keymap.set
 -- Remap for dealing with buffers
 map("n", "<tab>", "<cmd>bnext<cr>", { desc = "Switch to next buffer" })
 map("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "Switch to prev buffer" })
-map("n", "<leader>x", function()
-  Snacks.bufdelete()
-end, { desc = "Delete Buffer" })
 
 -- Work with GitSigns
--- map("n", "<leader>gj", "<cmd>lua require 'gitsigns'.next_hunk()<cr>", { desc = "Next Hunk" })
+map("n", "<leader>gj", "<cmd>lua require 'gitsigns'.next_hunk()<cr>", { desc = "Next Hunk" })
