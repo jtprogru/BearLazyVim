@@ -3,6 +3,8 @@
 -- Add any additional options here
 local opt = vim.opt
 local HOME = os.getenv("HOME")
+
+-- Enable python3 host program
 vim.g.python3_host_prog = HOME .. "/.config/nvim/venv/bin/python3"
 
 -- Use Ruff for Python
@@ -18,8 +20,10 @@ opt.spelllang = "ru_ru,en_us"
 -- Relative line numbers
 opt.relativenumber = false
 
+-- Set big file size to 1.5 GB
 vim.g.bigfile_size = 1024 * 1024 * 1024 * 1.5 -- 1.5 GB
 
+-- Add syntax highlighting for gotmpl files like helm templates
 vim.filetype.add({
   extension = {
     gotmpl = "gotmpl",
