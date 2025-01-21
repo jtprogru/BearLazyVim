@@ -104,6 +104,7 @@ return {
     ---@param opts TSConfig
     config = function(_, opts)
       if type(opts.ensure_installed) == "table" then
+        ---@diagnostic disable-next-line: param-type-mismatch
         opts.ensure_installed = LazyVim.dedup(opts.ensure_installed)
       end
       require("nvim-treesitter.configs").setup(opts)
@@ -118,6 +119,7 @@ return {
       -- If treesitter is already loaded, we need to run config again for textobjects
       if LazyVim.is_loaded("nvim-treesitter") then
         local opts = LazyVim.opts("nvim-treesitter")
+        ---@diagnostic disable-next-line: missing-fields
         require("nvim-treesitter.configs").setup({ textobjects = opts.textobjects })
       end
 
