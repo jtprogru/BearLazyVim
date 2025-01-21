@@ -27,6 +27,7 @@ return {
     "delve",
     "goimports",
     "gomodifytags",
+    "golangci-lint",
     "gopls",
     -- Terraform
     "tflint",
