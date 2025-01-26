@@ -13,12 +13,12 @@ vim.g.lazyvim_python_lsp = "ruff"
 -- Set color column to 120
 opt.colorcolumn = "120"
 
+-- Lines in scroll before end of screen
+opt.scrolloff = 10
+
 -- Enable spell checking
 opt.spell = true
 opt.spelllang = "ru_ru,en_us"
-
--- Relative line numbers
-opt.relativenumber = false
 
 -- Set big file size to 1.5 GB
 vim.g.bigfile_size = 1024 * 1024 * 1024 * 1.5 -- 1.5 GB
