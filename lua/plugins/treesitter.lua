@@ -65,6 +65,7 @@ return {
         "markdown",
         "markdown_inline",
         "ninja",
+        -- "nix",
         -- "pug",
         "printf",
         "python",

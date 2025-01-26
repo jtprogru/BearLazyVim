@@ -1,9 +1,12 @@
 return {
   ensure_installed = {
+    "gh",
+    "gitleaks",
     -- Ansible
     "ansible-language-server",
     "ansible-lint",
     "yamllint",
+    "yamlfmt",
     -- Python
     "autopep8",
     "black",
@@ -28,18 +31,24 @@ return {
     "goimports",
     "gomodifytags",
     "golangci-lint",
+    "golangci-lint-langserver",
     "gopls",
+    "gotests",
     -- Terraform
     "tflint",
     "terraform-ls",
     "tfsec",
+    "hclfmt",
     -- Jsonnet
     "jsonnet-language-server",
     "jsonnetfmt",
     -- Markdown
     "markdownlint-cli2",
     "markdown-toc",
+    "ltex-ls",
     -- Rust
     "rust-analyzer",
+    -- Nix
+    -- "nil",
   },
 }
