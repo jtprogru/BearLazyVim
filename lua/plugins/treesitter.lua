@@ -43,7 +43,7 @@ return {
       ensure_installed = {
         "bash",
         "c",
-        "cmake",
+        -- "cmake",
         "cpp",
         "diff",
         "dockerfile",
