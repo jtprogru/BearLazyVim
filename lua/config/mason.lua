@@ -1,4 +1,15 @@
 return {
+  max_concurrent_installers = 4,
+  pip = {
+    upgrade_pip = true,
+  },
+  ui = {
+    icons = {
+      package_installed = "✓",
+      package_pending = "➜",
+      package_uninstalled = "✗",
+    },
+  },
   ensure_installed = {
     "gh",
     "gitleaks",
@@ -44,8 +55,9 @@ return {
     "jsonnetfmt",
     -- Markdown
     "markdownlint-cli2",
-    "markdown-toc",
-    "ltex-ls",
+    -- "markdown-toc",
+    -- "marksman",
+    -- "ltex-ls",
     -- Rust
     "rust-analyzer",
     -- Nix
