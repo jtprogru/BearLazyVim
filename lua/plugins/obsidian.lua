@@ -14,7 +14,6 @@ return {
   },
   dependencies = {
     "nvim-lua/plenary.nvim",
-    "hrsh7th/nvim-cmp",
   },
   opts = obsidian_config,
 }
