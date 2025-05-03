@@ -54,12 +54,12 @@ return {
     -- "jsonnet-language-server",
     -- "jsonnetfmt",
     -- Markdown
-    "markdownlint-cli2",
+    -- "markdownlint-cli2",
     -- "markdown-toc",
     -- "marksman",
     -- "ltex-ls",
     -- Rust
-    "rust-analyzer",
+    -- "rust-analyzer",
     -- Nix
     -- "nil",
   },
