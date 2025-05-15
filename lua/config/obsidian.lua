@@ -4,13 +4,13 @@ return {
   workspaces = {
     {
       name = "SPACE",
-      path = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/SPACE",
+      path = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/SecondBrain",
       strict = true,
     },
   },
 
   -- Define directory for notes
-  notes_subdir = "00-Inbox",
+  notes_subdir = "0. Файлы/0. Входящие",
 
   -- Define log level
   log_level = vim.log.levels.INFO,
@@ -18,7 +18,7 @@ return {
   -- Define configuration for Daily notes
   daily_notes = {
     -- Optional, if you keep daily notes in a separate directory.
-    folder = "Journal",
+    folder = "2. Сферы жизни/0. Дневник",
     -- Optional, if you want to change the date format for the ID of daily notes.
     date_format = "%Y/%m/%Y-%m-%d",
     -- Optional, if you want to change the date format of the default alias of daily notes.
@@ -58,7 +58,7 @@ return {
   -- Where to put new notes. Valid options are
   --  * "current_dir" - put new notes in same directory as the current buffer.
   --  * "notes_subdir" - put new notes in the default notes subdirectory.
-  new_notes_location = "notes_subdir",
+  new_notes_location = "0. Файлы/0. Входящие",
 
   -- Optional, customize how note IDs are generated given an optional title.
   ---@param title string|?
