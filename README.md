@@ -5,6 +5,12 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## Installation
 
+Backup old NeoVim configuration:
+
+```shell
+mv ~/.config/nvim ~/.config/nvim_bkp
+```
+
 Clone this repository:
 
 ```shell
