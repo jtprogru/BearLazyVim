@@ -3,7 +3,7 @@ return {
   -- Define all workspaces
   workspaces = {
     {
-      name = "SPACE",
+      name = "SecondBrain",
       path = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/SecondBrain",
       strict = true,
     },
@@ -135,7 +135,7 @@ return {
 
   -- Optional, for templates (see below).
   templates = {
-    folder = "Templates/Input",
+    folder = "0. Файлы/1. Шаблоны",
     date_format = "%Y-%m-%d",
     time_format = "%H:%M",
     -- A map for custom variables, the key should be the variable and the value a function
