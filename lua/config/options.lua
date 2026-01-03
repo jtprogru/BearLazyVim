@@ -17,7 +17,7 @@ opt.colorcolumn = "120"
 opt.scrolloff = 10
 
 -- Enable spell checking
-opt.spell = true
+opt.spell = false
 opt.spelllang = "ru_ru,en_us"
 
 -- Set big file size to 1.5 GB
