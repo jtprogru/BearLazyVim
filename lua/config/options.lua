@@ -16,6 +16,9 @@ opt.colorcolumn = "120"
 -- Lines in scroll before end of screen
 opt.scrolloff = 10
 
+-- Add block cursor in INSERT MODE
+opt.guicursor = "i:block"
+
 -- Enable spell checking
 opt.spell = false
 -- opt.spelllang = "ru_ru,en_us"
