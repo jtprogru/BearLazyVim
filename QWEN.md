@@ -134,9 +134,13 @@ Enabled extras (in `lua/config/lazy.lua`):
 - `lazyvim.plugins.extras.dap.core` - Debug adapter protocol
 - `lazyvim.plugins.extras.editor.fzf` - fzf integration
 - `lazyvim.plugins.extras.editor.outline` - Code outline
-- `lazyvim.plugins.extras.lang.*` - Language packs (python, go, rust, terraform, etc.)
+- `lazyvim.plugins.extras.lang.ansible` - Ansible language support
+- `lazyvim.plugins.extras.lang.git` - Git language support
+- `lazyvim.plugins.extras.lang.markdown` - Markdown language support
+- `lazyvim.plugins.extras.lang.python` - Python language support
+- `lazyvim.plugins.extras.lang.rust` - Rust language support
+- `lazyvim.plugins.extras.lang.toml` - TOML language support
 - `lazyvim.plugins.extras.lsp.none-ls` - Null-ls for formatters/linters
-- `lazyvim.plugins.extras.test.core` - Test runner
 
 ## Maintenance
 
