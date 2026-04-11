@@ -78,10 +78,10 @@ return {
     bullet = {
       enabled = true,
       icons = { "●", "○", "◆", "◇" },
-      ordered_icons = function(level, index, value)
-        value = value:match("%d+") or tostring(index)
+      ordered_icons = function(ctx)
+        local value = (ctx.value and ctx.value:match("%d+")) or tostring(ctx.index)
         local icons = { "%s.", "%s)", "(%s)", "[%s]" }
-        return icons[math.min(level, #icons)]:format(value)
+        return icons[math.min(ctx.level, #icons)]:format(value)
       end,
       left_pad = 0,
       right_pad = 0,
@@ -125,8 +125,18 @@ return {
       padding = 1,
       min_width = 0,
       border = {
-        "╔", "═", "╗", "╠", "═", "╣", "╬", "╚", "╝",
-        "║", "╦", "╩",
+        "╔",
+        "═",
+        "╗",
+        "╠",
+        "═",
+        "╣",
+        "╬",
+        "╚",
+        "╝",
+        "║",
+        "╦",
+        "╩",
       },
       alignment_indicator = "━",
       head = "RenderMarkdownTableHead",
