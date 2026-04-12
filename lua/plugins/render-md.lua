@@ -15,7 +15,7 @@ return {
     heading = {
       enabled = true,
       sign = true,
-      position = "overlay",
+      position = "inline",
       icons = { "󰲡 ", "󰲣 ", "󰲥 ", "󰲧 ", "󰲩 ", "󰲫 " },
       signs = { "󰫎 " },
       width = "full",
@@ -119,29 +119,20 @@ return {
     -- Таблицы
     pipe_table = {
       enabled = true,
-      preset = "double",
-      style = "full",
+      render_modes = false,
+      preset = "none",
       cell = "padded",
+      cell_offset = function()
+        return 0
+      end,
       padding = 1,
       min_width = 0,
-      border = {
-        "╔",
-        "═",
-        "╗",
-        "╠",
-        "═",
-        "╣",
-        "╬",
-        "╚",
-        "╝",
-        "║",
-        "╦",
-        "╩",
-      },
+      border_enabled = true,
+      border_virtual = false,
       alignment_indicator = "━",
       head = "RenderMarkdownTableHead",
       row = "RenderMarkdownTableRow",
-      filler = "RenderMarkdownTableFill",
+      style = "full",
     },
 
     -- Вызывающие блоки (callouts)
@@ -196,7 +187,7 @@ return {
 
     -- Знак в колонке (sign column)
     sign = {
-      enabled = false,
+      enabled = true,
       highlight = "RenderMarkdownSign",
     },
 
