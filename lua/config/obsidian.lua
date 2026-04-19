@@ -10,7 +10,7 @@ return {
   },
 
   -- Define directory for notes
-  notes_subdir = "0. Файлы/0. Входящие",
+  notes_subdir = "00. Входящие/",
 
   -- Define log level
   log_level = vim.log.levels.INFO,
@@ -18,7 +18,7 @@ return {
   -- Define configuration for Daily notes
   daily_notes = {
     -- Optional, if you keep daily notes in a separate directory.
-    folder = "2. Сферы жизни/0. Дневник",
+    folder = "05. Дневник/",
     -- Optional, if you want to change the date format for the ID of daily notes.
     date_format = "%Y/%m/%Y-%m-%d",
     -- Optional, if you want to change the date format of the default alias of daily notes.
@@ -58,7 +58,7 @@ return {
   -- Where to put new notes. Valid options are
   --  * "current_dir" - put new notes in same directory as the current buffer.
   --  * "notes_subdir" - put new notes in the default notes subdirectory.
-  new_notes_location = "0. Файлы/0. Входящие",
+  new_notes_location = "00. Входящие",
 
   -- Optional, customize how note IDs are generated given an optional title.
   ---@param title string|?
@@ -135,7 +135,7 @@ return {
 
   -- Optional, for templates (see below).
   templates = {
-    folder = "0. Файлы/1. Шаблоны",
+    folder = "_Система/1. Шаблоны",
     date_format = "%Y-%m-%d",
     time_format = "%H:%M",
     -- A map for custom variables, the key should be the variable and the value a function
@@ -241,7 +241,7 @@ return {
     -- The default folder to place images in via `:ObsidianPasteImg`.
     -- If this is a relative path it will be interpreted as relative to the vault root.
     -- You can always override this per image by passing a full path to the command instead of just a filename.
-    img_folder = "0. Файлы/2. Статика", -- This is the default
+    img_folder = "_Система/2. Статика", -- This is the default
 
     -- Optional, customize the default name or prefix when pasting images via `:ObsidianPasteImg`.
     ---@return string
