@@ -14,7 +14,7 @@ vim.g.lazyvim_python_lsp = "ruff"
 opt.colorcolumn = "120"
 
 -- Lines in scroll before end of screen
-opt.scrolloff = 10
+opt.scrolloff = 5
 
 -- Add block cursor in INSERT MODE
 opt.guicursor = "i:block"
