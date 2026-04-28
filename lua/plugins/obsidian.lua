@@ -2,7 +2,8 @@
 local obsidian_config = require("config.obsidian")
 
 return {
-  "epwalsh/obsidian.nvim",
+  -- "epwalsh/obsidian.nvim",
+  "obsidian-nvim/obsidian.nvim",
   verion = "*",
   lazy = false,
   ft = "markdown",

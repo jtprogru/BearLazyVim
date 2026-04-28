@@ -38,3 +38,16 @@ vim.filetype.add({
     ["helmfile.*%.ya?ml"] = "helm",
   },
 })
+
+vim.diagnostic.config({
+  virtual_text = {
+    severity = { min = vim.diagnostic.severity.ERROR },
+    -- Filter out specific marksman diagnostics
+    on_init = function(diag)
+      if diag.source == "marksman" and diag.message:find("Link to non-existent") then
+        return false
+      end
+      return true
+    end,
+  },
+})
