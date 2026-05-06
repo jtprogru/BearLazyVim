@@ -43,6 +43,14 @@ return {
   },
 
   attachments = {
-    folder = "_Система/2. Статика", -- This is the default
+    folder = "_Система/2. Статика",
+    confirm_img_paste = true,
+  },
+
+  -- Подставлять wiki-ссылки автокомплитом по '['
+  completion = {
+    nvim_cmp = false,
+    blink = true,
+    min_chars = 2,
   },
 }
