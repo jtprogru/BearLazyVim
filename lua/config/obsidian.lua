@@ -53,4 +53,20 @@ return {
     blink = true,
     min_chars = 2,
   },
+
+  -- Не добавлять поле `id` во frontmatter (оставляем только aliases/tags
+  -- и уже существующие метаданные заметки).
+  frontmatter = {
+    func = function(note)
+      local out = { aliases = note.aliases, tags = note.tags }
+      if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
+        for k, v in pairs(note.metadata) do
+          if k ~= "id" then
+            out[k] = v
+          end
+        end
+      end
+      return out
+    end,
+  },
 }
