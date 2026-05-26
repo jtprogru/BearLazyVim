@@ -48,10 +48,9 @@ return {
   },
 
   -- Подставлять wiki-ссылки автокомплитом по '['
+  -- Комплит теперь обеспечивается встроенным obsidian-ls LSP-сервером.
   completion = {
-    nvim_cmp = false,
-    blink = true,
-    min_chars = 2,
+    min_chars = 3,
   },
 
   -- Не добавлять поле `id` во frontmatter (оставляем только aliases/tags
