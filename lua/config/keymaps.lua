@@ -10,6 +10,11 @@ map("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "Switch to prev buffer" })
 -- Work with GitSigns
 map("n", "<leader>gj", "<cmd>lua require 'gitsigns'.next_hunk()<cr>", { desc = "Next Hunk" })
 
+map("n", "<C-h>", require("smart-splits").move_cursor_left)
+map("n", "<C-j>", require("smart-splits").move_cursor_down)
+map("n", "<C-k>", require("smart-splits").move_cursor_up)
+map("n", "<C-l>", require("smart-splits").move_cursor_right)
+
 -- -- VIM hard mode (disable backspace and arrows)
 -- -- Source: https://www.mailslurp.com/blog/vim-hard-mode/
 -- local hardmode = true
