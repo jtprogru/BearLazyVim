@@ -24,6 +24,7 @@ return {
     "gotests",
     "gotestsum",
     "impl",
+    "ltex-ls-plus",
     "lua-language-server",
     "markdown-toc",
     "markdownlint-cli2",

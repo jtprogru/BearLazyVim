@@ -19,9 +19,10 @@ opt.scrolloff = 5
 -- Add block cursor in INSERT MODE
 opt.guicursor = "i:block"
 
--- Enable spell checking
+-- Spell checking: глобально выключен, LazyVim включает его автоматически
+-- для markdown/gitcommit через группу `lazyvim_wrap_spell`.
 opt.spell = false
--- opt.spelllang = "ru_ru,en_us"
+opt.spelllang = { "en_us", "ru_ru" }
 
 -- Set big file size to 1.5 GB
 vim.g.bigfile_size = 1024 * 1024 * 1024 * 1.5 -- 1.5 GB
