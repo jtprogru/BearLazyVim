@@ -1,0 +1,31 @@
+return {
+  "folke/which-key.nvim",
+  opts = {
+    spec = {
+      { "<leader>o", group = "Obsidian", icon = { icon = "󰠮", color = "purple" } },
+      { "<leader>oo", desc = "Quick switch note", icon = { icon = "󰽏", color = "purple" } },
+      { "<leader>oq", desc = "Quick switch note", icon = { icon = "󰽏", color = "purple" } },
+      { "<leader>od", desc = "Daily (Templater)", icon = { icon = "󰸘", color = "green" } },
+      { "<leader>oy", desc = "Yesterday (Templater)", icon = { icon = "󰸗", color = "yellow" } },
+      { "<leader>oT", desc = "Tomorrow (Templater)", icon = { icon = "󰸖", color = "cyan" } },
+      { "<leader>oD", desc = "Daily (native)", icon = { icon = "󰸘", color = "green" } },
+      { "<leader>on", desc = "New note", icon = { icon = "󰎜", color = "azure" } },
+      { "<leader>os", desc = "Search (grep)", icon = { icon = "󰍉", color = "blue" } },
+      { "<leader>ot", desc = "Tags", icon = { icon = "󰓹", color = "orange" } },
+      { "<leader>ob", desc = "Backlinks", icon = { icon = "󱒖", color = "purple" } },
+      { "<leader>ol", desc = "Links in note", icon = { icon = "󰌷", color = "purple" } },
+      { "<leader>oL", desc = "Follow link", icon = { icon = "󰒖", color = "purple" } },
+      { "<leader>oi", desc = "Insert template (Templater)", icon = { icon = "󰈮", color = "azure" } },
+      { "<leader>oI", desc = "Insert template (native)", icon = { icon = "󰈭", color = "azure" } },
+      { "<leader>op", desc = "Paste image", icon = { icon = "󰋩", color = "green" } },
+      { "<leader>or", desc = "Rename note", icon = { icon = "󰏬", color = "yellow" } },
+      { "<leader>ow", desc = "Switch workspace", icon = { icon = "󰉋", color = "yellow" } },
+      { "<leader>oc", desc = "Toggle checkbox", icon = { icon = "󰄬", color = "green" } },
+
+      { "<leader>q", group = "Quarto", icon = { icon = "󰐩", color = "blue" } },
+      { "<leader>qp", desc = "Preview", icon = { icon = "󰐊", color = "green" } },
+      { "<leader>qc", desc = "Close preview", icon = { icon = "󰅖", color = "red" } },
+      { "<leader>qa", desc = "Activate (otter LSP)", icon = { icon = "󰒓", color = "blue" } },
+    },
+  },
+}
