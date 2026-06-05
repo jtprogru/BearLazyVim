@@ -471,7 +471,8 @@ function M.daily(opts)
   local now = os.time() + offset * 86400
   local date_str = os.date("%Y-%m-%d", now)
   local year = os.date("%Y", now)
-  local path = VAULT_DIR .. "/05. Дневник/" .. year .. "/" .. date_str .. ".md"
+  local month = os.date("%m", now)
+  local path = VAULT_DIR .. "/05. Дневник/" .. year .. "/" .. month .. "/" .. date_str .. ".md"
   vim.fn.mkdir(vim.fn.fnamemodify(path, ":h"), "p")
   local exists = vim.uv.fs_stat(path) ~= nil
   vim.cmd("edit " .. vim.fn.fnameescape(path))
